@@ -1,0 +1,51 @@
+/* #wrapper{
+    border : 10px solid red;
+} */
+#wrapper>* {
+    border : 10px solid blue;
+}
+/* #wrapper>*>*{
+    border : 10px solid yellow;
+} */
+body{
+    background-image : url(../../images/bg.jpg);
+    background-size : cover;
+    background-position: top center;
+}
+
+#wrapper{
+    max-width: 68em;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0.2em;
+    opacity: 1;
+}
+#header{
+    display: block;
+    text-align: center;
+}
+
+#header h1{
+    font-weight: 200;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1.25rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#header .avatar{
+    border-radius: 100%;
+    border : 0.2rem solid rgba(255,255,255,0.5);
+    display : inline-block;
+    margin: 0 0 2em 0;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+#header .avatar img{
+    border-radius : 100%;
+    display : block;
+    width : 13rem;
+}
+
