@@ -1,9 +1,9 @@
 /* #wrapper{
     border : 10px solid red;
 } */
-#wrapper>* {
+/* #wrapper>* {
     border : 10px solid blue;
-}
+} */
 /* #wrapper>*>*{
     border : 10px solid yellow;
 } */
@@ -19,6 +19,7 @@ body{
     margin: 2rem auto;
     padding: 0.2em;
     opacity: 1;
+    margin-top: 5rem;
 }
 #header{
     display: block;
@@ -28,10 +29,18 @@ body{
 #header h1{
     font-weight: 200;
     line-height: 1.5;
-    margin: 0 0 1em 0;
+    margin: 1rem 0 1.5rem 0;
     color: rgba(255, 255, 255, 0.65);
     font-size: 1.25rem;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+#header h1::before{
+    content: '';
+    border-top: solid 1px rgba(255, 255, 255, 0.25);
+    width: 20rem;
+    display: block;
+    margin: 1rem auto;
 }
 
 #header .avatar{
@@ -49,3 +58,124 @@ body{
     width : 13rem;
 }
 
+
+
+
+#header .icons li {
+    display : inline-block;
+    border: 0.1rem solid rgba(255,255,255,0.5);
+    border-radius: 100%;
+    background-color: rgba(255,255,255,0.03);
+    justify-content: center;
+    align-items: center;
+    margin-right:1rem;
+    padding: 0.3rem
+}
+
+#header .icons .icon-instagram {
+    color: powderblue;
+}
+
+#header .icons .icon-phone-squared{
+    color: green;
+}
+
+#header .icons .icon-chat{
+    color: rgba(255, 255, 0, 0.65); 
+}
+
+#header .icons .icon-heart{
+    color: red;
+}
+
+#header .icons li:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+#header .icons li a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+}
+
+#header .icons li a .label {
+    display: none;
+}
+
+#header nav ul li{
+    display: inline-block;
+}
+
+#header nav ul li a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgba(0,0,0);
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+#main{
+    margin-top: 5rem;
+}
+
+#main .thumbnails{
+    display: flex;
+}
+
+#main .thumbnails>div{
+    flex-grow: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#main .thumbnails a{
+    transition: all 0.2s ease;
+    border-bottom: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 25%);
+    background-color: rgba(255, 255, 255, 0.075);
+    margin-bottom: 3rem;
+    padding-bottom: 0.1rem;
+}
+
+#main .thumbnails a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 1px 1.5px rgba(255,255,255,0.25);
+}
+
+#main .thumbnails a h3{
+    color: powderblue;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+#main .thumbnails a img{
+    display: block;
+    width: 100%;
+}
+
+#footer{
+    text-align: center;
+    margin-top: 10rem;
+
+}
+
+#footer::before{
+    content: '';
+    border-top: solid 1px rgba(255, 255, 255, 0.25);
+    width: 10rem;
+    display: block;
+    margin: 2rem auto;
+}
+
+#footer p{
+    margin-top: 2rem;
+}
+
+@media(max-width:480px) {
+    #main .thumbnails{
+        display: block;
+    }
+}

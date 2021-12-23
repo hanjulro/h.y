@@ -11,10 +11,12 @@ body{
   background-image: url(../../images/bg.jpg);
   background-size:cover;
   font-family: 'Source Sans Pro', sans-serif;
+  background-position: center;
 }
 #wrapper{
   max-width:68rem;
   margin:0 auto;
+  padd
 }
 #header{
   text-align: center;
