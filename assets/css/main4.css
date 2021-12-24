@@ -172,6 +172,8 @@ body{
 
 #footer p{
     margin-top: 2rem;
+    color: blanchedalmond;
+    font-size: 0.7rem;
 }
 
 @media(max-width:480px) {
